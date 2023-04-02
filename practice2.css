@@ -33,12 +33,9 @@ nav{
     font-size: 25px;
     color: white;
     z-index: 100;
-
-
 }
 
 nav i{
-
     font-size: 40px;
     margin: 5px;
 }
@@ -81,7 +78,7 @@ input:focus{
 
 
 .rahul-img{
-    position: absolute;
+    position:absolute;
     display: inline-block;
     background-image: url("image/rahul.jpg");
     height: 30px;
@@ -97,15 +94,20 @@ input:focus{
    .fav{
        display: none;
    }
-
 }
 
 @media screen and (max-width: 600px){
     .spotify{
         display: none;
     }
-    .search{
-        display:none;
+
+}
+@media screen and(max-width: 400px) {
+    .search-box{
+        width: 180px;
+    }
+    input{
+        width:100px;
     }
 }
 
