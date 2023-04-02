@@ -303,7 +303,7 @@ input:focus{
     overflow: hidden;
     /*justify-content: space-around;*/
     /*align-content: center;*/
-    /*overflow-x: scroll;*/
+    overflow-x: scroll;
 }
 
 
