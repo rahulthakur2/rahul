@@ -269,7 +269,7 @@ input:focus{
 }
 
 #latest-release-content i{
-    color:white; 
+    color:white;
 
 }
 
@@ -298,12 +298,10 @@ input:focus{
 #singer{
     width: 100%;
     height: auto;
-    /*border: 1px solid red;*/
+    /*border: 4px solid red;*/
     display: flex;
-    overflow: hidden;
-    /*justify-content: space-around;*/
-    /*align-content: center;*/
-    overflow-x: scroll;
+    overflow-x:  scroll;
+
 }
 
 
@@ -364,7 +362,7 @@ input:focus{
     flex-grow: 1;
     margin:12px;
     max-height: 10rem;
-    min-width: 10rem;
+    min-width: 15rem;
     min-height: 10rem;
     max-width: 25rem;
     /*border: 1px solid rebeccapurple;*/
