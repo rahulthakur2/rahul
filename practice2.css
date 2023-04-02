@@ -103,6 +103,9 @@ input:focus{
     .spotify{
         display: none;
     }
+    .search{
+        display:none;
+    }
 }
 
 
