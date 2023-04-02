@@ -92,6 +92,10 @@ input:focus{
     top:20%;
 }
 
+.bell{
+    margin: 5px;
+}
+
 
 @media screen and (max-width:700px) {
    .fav{
@@ -115,9 +119,9 @@ input:focus{
         border: 1px solid red;
         right: 15%;
     }
-    .bell{
-        display: none;
-    }
+
+
+
 }
 
 
@@ -248,13 +252,14 @@ input:focus{
 }
 #latest-release{
     overflow-x: scroll;
-    width:100%;
+    width:90%;
     height: auto;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
     /*flex-wrap: wrap;*/
     padding: 30px;
     /*box-sizing: border-box;*/
+    margin: auto;
 }
 #latest-release .option{
     position: relative;
@@ -262,7 +267,7 @@ input:focus{
     /*max-width: 20rem;*/
     min-height: 2rem;
     min-width: 20rem;
-    border :1px solid red;
+    /*border :1px solid red;*/
     /*overflow: hidden;*/
     flex-grow: 1;
     margin: 0 50px;
@@ -279,9 +284,8 @@ input:focus{
 
 #latest-release-content{
     display: inline-block;
-    /*position: relative;*/
-    /*top:-50%;*/
-    border: 1px solid red;
+    position: relative;
+    top:-50%;
 }
 
 #latest-release-content i{
