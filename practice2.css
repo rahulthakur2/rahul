@@ -108,11 +108,11 @@ input:focus{
 @media screen and (max-width: 400px) {
     .search-box{
         width: 180px;
-        border: 1px solid red;
+        /*border: 1px solid red;*/
     }
     input{
         width:80px;
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         right: 15%;
     }
 }
@@ -611,7 +611,7 @@ audio::-webkit-media-controls-volume-slider {
     .queue{
         display: none;
     }
-    #music-div{
+    #left-part-of-queue{
         width: 100%;
     }
 
