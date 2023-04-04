@@ -1,17 +1,20 @@
-
+/*to hide ths scroll bar*/
 ::-webkit-scrollbar {
     display: none;
 }
+
 body{
     color:white;
     font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
-    margin: 0px;
+    margin: 0;
     overflow: hidden;
     overflow-y: scroll;
     background-image:linear-gradient(to bottom,rgba(13,16,38,0.6) ,rgba(13,16,38,0.3)) ;
+
 }
 
-#music-div{
+/*!*just for fun adding extra space below*/
+#left-part-of-queue{
     padding-bottom: 100px;
 }
 
@@ -20,18 +23,15 @@ p{
     margin: 0;
 }
 h4{
-    margin: 0px;
+    margin: 0;
 }
-
 
 nav{
     position: fixed;
     width: 100%;
     height: auto;
     background-color: #0D1026;
-    font-family: Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif;
     font-size: 25px;
-    color: white;
     z-index: 100;
 }
 
@@ -43,9 +43,6 @@ nav i{
 .fav{
     font-size: 21px;
     margin:0 50px;
-    color:white;
-
-
 }
 .search{
     position: absolute;
@@ -62,7 +59,6 @@ nav i{
     display: inline-block;
     height: 30px;
     width: 250px;
-    /*border: 1px solid red;*/
     background-color: #523075;
     border-radius: 10px;
 
@@ -75,25 +71,25 @@ input{
     background-color: #523075;
     border-style: none;
 }
+/*removing the input border outline*/
 input:focus{
     outline: none;
 }
 
+.bell{
+    margin: 5px;
+}
 
 .rahul-img{
     position:absolute;
     display: inline-block;
-    background-image: url("image/rahul.jpg");
+    background-image: url("images/rahul.jpg");
     height: 30px;
     width: 30px;
     border-radius: 50%;
     background-size: cover;
     right: 2%;
     top:20%;
-}
-
-.bell{
-    margin: 5px;
 }
 
 
@@ -112,22 +108,14 @@ input:focus{
 @media screen and (max-width: 400px) {
     .search-box{
         width: 180px;
-
+        border: 1px solid red;
     }
     input{
         width:80px;
-
+        border: 1px solid red;
         right: 15%;
     }
-
-
-
 }
-
-
-
-
-/*music*/
 
 
 
@@ -135,81 +123,51 @@ input:focus{
     display: block;
     width: 100%;
     height: 100%;
-
-
 }
 
-#music-div{
+#left-part-of-queue{
     background-image:linear-gradient(to bottom,rgba(13,16,38,1) ,rgba(13,16,38,0.8)) ;
-
-}
-
-.music div:hover{
-    animation-name: scale-animation;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-}
-
-
-
-.music{
-    display: flex;
-    flex-shrink: 1;
-    /*border: 2px solid red;*/
-    width: 100%;
-    height: auto;
-    margin-top:50px;
-    overflow-x: scroll;
-
-}
-
-
-#music-div{
     width: 80%;
     height: auto;
     /*border:2px solid red;*/
     display: inline-block;
-    margin:0px;
-
+    margin:0;
 }
+
+/*music*/
+.music{
+    display: flex;
+    flex-shrink: 1;
+    width: 100%; height: auto;
+    margin-top:50px; overflow-x: scroll;
+}
+
+.music div:hover{
+    animation-name: scale-animation;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+}
+
+.music div{
+    max-height: 15rem; min-height: 8rem;
+    max-width: 12rem; min-width: 8rem;
+    margin:40px;
+}
+
+.music img{
+    width: 100%; height: 100%;
+}
+
+
 
 .queue {
     display: inline-block;
     position:absolute;
-    /*border: 1px solid chartreuse;*/
     width: 19%;
     height: auto;
-    margin:0px;
+    margin:0;
     margin-top: 50px;
-    /*scroll:fixed;*/
 }
-
-.music div{
-    max-height: 15rem;
-    max-width: 12rem;
-    min-height: 8rem;
-    min-width: 8rem;
-    /*border :1px solid red;*/
-
-}
-
-.music img{
-    /*border: 1px solid #de3241;*/
-    width: 100%;
-    height: 100%;
-}
-
-
-.music div{
-    /*border :1px solid red;*/
-    max-height: 70vh;
-
-
-    margin:40px;
-}
-
-
-
 
 @keyframes music-animation {
     0%{
@@ -228,7 +186,6 @@ input:focus{
     100% {
         transform: rotate(-5deg);
     }
-
 }
 
 @keyframes scale-animation {
@@ -257,24 +214,30 @@ input:focus{
     /*border: 1px solid red;*/
     display: flex;
     /*flex-wrap: wrap;*/
-    padding: 30px;
+    padding: 20px;
     /*box-sizing: border-box;*/
     margin: auto;
 }
 #latest-release .option{
     position: relative;
-    max-height: 12rem;
+    /*max-height: 12rem;*/
     /*max-width: 20rem;*/
-    min-height: 2rem;
-    min-width: 20rem;
+    /*min-height: 2rem;*/
+    min-width: 25rem;
     /*border :1px solid red;*/
+    height: 6.2rem;
     /*overflow: hidden;*/
+    /*margin: auto;*/
+
     flex-grow: 1;
     margin: 0 50px;
 }
+.option:hover{
+    background-image:linear-gradient(to bottom, rgb(31, 39, 97,0.9),rgba(13,16,38,0.9)) ;
+}
 #latest-release-img:hover{
     animation-name: scale-animation;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-iteration-count: 1;
 }
 
@@ -312,11 +275,54 @@ input:focus{
     width: 100%;
     height: 100%;
 }
+
+/*nothing important just design*/
+
+.list-option{
+    color:white;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+#play-option-list{
+    font-size: 12px;
+    position: absolute;
+    width: 6rem;
+    height: 4rem;
+    top:10%;
+    right: 4%;
+    overflow:scroll;
+}
+#play-option-list p{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#play-option-list i{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#play-option-list{
+    display: none;
+}
+.list-option:hover + #play-option-list{
+    display: block;
+}
+#play-option-list:hover{
+    display: block;
+}
 @media screen and (max-width: 650px) {
     #latest-release .option{
         margin: 0 5px;
     }
 }
+
+
+
 /*singer*/
 
 
@@ -339,7 +345,7 @@ input:focus{
 }
 #singer div:hover{
     animation-name: scale-animation;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-iteration-count: 1;
 }
 
@@ -360,7 +366,7 @@ input:focus{
     left: 45%;
     font-size: 32px;
     display: none;
-    /*border: 1px solid red;*/
+
 }
 
 #singer div:hover img{
@@ -407,7 +413,7 @@ input:focus{
 
 #mood-playlist div img:hover{
     animation-name: scale-animation;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-iteration-count: 1;
 }
 
@@ -465,16 +471,14 @@ input:focus{
 
 
 .queue-list div{
-    background-image: linear-gradient(rgba(26,30,50,1), rgba(26,30,50,0.6));
+    background-image: linear-gradient(rgba(26,30,50,1), rgba(26,30,50,0.4));
     position:relative;
     width: 100%;
     height: auto;
     margin: 30px 0;
-    /*border: 1px solid red;*/
 }
 
 .queue-list img{
-    /*position: ;*/
     margin-left: 5px;
     width: 30px;
     height: 30px;
@@ -512,6 +516,22 @@ input:focus{
 .queue-list div h3{
     display: inline-block;
 }
+.queue-list{
+    position: relative;
+}
+.queue-list div:hover{
+    background-color: #e37272;
+}
+.queue-list div i{
+    position: absolute;
+    right: 5%;
+    top:15%;
+    font-size: 20px;
+}
+.queue-list div i:hover{
+    color:red;
+}
+
 
 
 
@@ -550,9 +570,6 @@ audio::-webkit-media-slider-container{
     color:white;
 }
 
-#player i{
-
-}
 
 
 
@@ -604,10 +621,5 @@ audio::-webkit-media-controls-volume-slider {
 #queue-hamburger:hover .queue-list{
     display:block;
 }
-
-
-
-
-
 
 
